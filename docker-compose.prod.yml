@@ -7,7 +7,7 @@ services:
     #   dockerfile: Dockerfile
     tty: true
     ports:
-      - "2000:2000"
+      - "{port}:2000"
     command: sh /usr/src/app/prod.sh
     volumes:
       - "./ws-server:/usr/src/app"
